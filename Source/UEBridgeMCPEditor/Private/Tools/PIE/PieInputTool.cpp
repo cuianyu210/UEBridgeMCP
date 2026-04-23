@@ -1,6 +1,7 @@
 // Copyright uuuuzz 2024-2026. All Rights Reserved.
 
 #include "Tools/PIE/PieInputTool.h"
+#include "Misc/EngineVersionComparison.h"
 #include "Tools/PIE/PieSessionTool.h"
 #include "UEBridgeMCPEditor.h"
 #include "Editor.h"
@@ -86,6 +87,7 @@ namespace UEBridgeMCP_PieInputInternal
 			DeviceId = IPlatformInputDeviceMapper::Get().GetDefaultInputDevice();
 		}
 
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 		FInputKeyEventArgs Args = FInputKeyEventArgs::CreateSimulated(
 			Key,
 			Event,
@@ -95,19 +97,18 @@ namespace UEBridgeMCP_PieInputInternal
 			/*bIsTouchEvent*/ false,
 			Viewport
 		);
-
-		// 直接走 PC->InputKey，绕过 UGameViewportClient::InputKey 的 GetLocalPlayerFromInputDevice 反查。
-		// 经端到端验证（UE 5.6 + 第三人称模板 + 旧版 AxisMapping）：该路径能让 UPlayerInput::InputKey 成功
-		// 更新 KeyStateMap 的 RawValueAccumulator/EventAccumulator，但由于 PIE 世界的 tick 顺序/InputComponent
-		// 栈差异，BP 的 "InputAxis MoveForward" 节点可能不采样到模拟事件。
-		// 对于需要驱动角色移动的场景，推荐使用 action:move-to（AI pathfind）可靠性最高。
 		PC->InputKey(Args);
+#else
+		FInputKeyParams Args(Key, Event, AmountDepressed, Key.IsGamepadKey(), DeviceId);
+		PC->InputKey(Args);
+#endif
 		UE_LOG(LogUEBridgeMCP, Log, TEXT("pie-input[v5-PC]: inject key=%s event=%d amount=%.2f device=%d"),
 			*Key.ToString(), (int32)Event, AmountDepressed, DeviceId.GetId());
 
 		// 对 axis key，再补发一次 IE_Axis 事件，让 InputAxis 映射（如 MoveForward/W）能采样到值
 		if (IsAxisKey(Key) && Event != IE_Released)
 		{
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 			FInputKeyEventArgs AxisArgs = FInputKeyEventArgs::CreateSimulated(
 				Key,
 				IE_Axis,
@@ -118,6 +119,10 @@ namespace UEBridgeMCP_PieInputInternal
 				Viewport
 			);
 			PC->InputKey(AxisArgs);
+#else
+			FInputKeyParams AxisArgs(Key, AmountDepressed, 0.0f, 1, Key.IsGamepadKey(), DeviceId);
+			PC->InputKey(AxisArgs);
+#endif
 		}
 	}
 

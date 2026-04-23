@@ -78,6 +78,7 @@ public class UEBridgeMCPEditor : ModuleRules
 			"StateTreeModule",
 			"StateTreeEditorModule",
 			"GameplayStateTreeModule",
+			"StructUtils",
 
 			// Gameplay
 			"GameplayAbilities",

@@ -9,7 +9,12 @@
 #include "StateTreeConditionBase.h"
 #include "StateTreePropertyBindings.h"
 #include "StateTreeTypes.h"
+#include "Misc/EngineVersionComparison.h"
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 #include "StructUtils/InstancedStructContainer.h"
+#else
+#include "InstancedStructContainer.h"
+#endif
 
 FString UQueryStateTreeTool::GetToolDescription() const
 {
@@ -131,7 +136,9 @@ TSharedPtr<FJsonObject> UQueryStateTreeTool::ExtractStates(UStateTree* StateTree
 		if (bDetailed)
 		{
 			StateObj->SetStringField(TEXT("selection_behavior"), GetSelectionBehaviorString(static_cast<uint8>(State.SelectionBehavior)));
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 			StateObj->SetNumberField(TEXT("depth"), State.Depth);
+#endif
 
 			// Parent info
 			if (State.Parent.IsValid())

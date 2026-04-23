@@ -1,6 +1,7 @@
 // Copyright uuuuzz 2024-2026. All Rights Reserved.
 
 #include "Tools/PIE/QueryGameplayStateTool.h"
+#include "Misc/EngineVersionComparison.h"
 #include "Utils/McpAssetModifier.h"
 #include "Animation/AnimInstance.h"
 #include "Components/SkeletalMeshComponent.h"
@@ -256,8 +257,12 @@ namespace QueryGameplayStateToolPrivate
 				AbilityObject->SetStringField(TEXT("class"), Ability->GetClass()->GetName());
 				AbilityObject->SetStringField(TEXT("class_path"), Ability->GetClass()->GetPathName());
 
-				TArray<TSharedPtr<FJsonValue>> AbilityTags;
+				TArray<TSharedPtr<FJsonValue>> AbilityTags;	
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 				for (const FGameplayTag& AbilityTag : Ability->GetAssetTags())
+#else
+				for (const FGameplayTag& AbilityTag : Ability->AbilityTags)
+#endif
 				{
 					AbilityTags.Add(MakeShareable(new FJsonValueString(AbilityTag.ToString())));
 				}
@@ -271,8 +276,12 @@ namespace QueryGameplayStateToolPrivate
 				AbilityObject->SetStringField(TEXT("class"), TEXT("None"));
 			}
 
-			TArray<TSharedPtr<FJsonValue>> DynamicSourceTags;
+			TArray<TSharedPtr<FJsonValue>> DynamicSourceTags;	
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 			for (const FGameplayTag& DynamicTag : AbilitySpec.GetDynamicSpecSourceTags())
+#else
+			for (const FGameplayTag& DynamicTag : AbilitySpec.DynamicAbilityTags)
+#endif
 			{
 				DynamicSourceTags.Add(MakeShareable(new FJsonValueString(DynamicTag.ToString())));
 			}
@@ -489,12 +498,18 @@ FMcpToolResult UQueryGameplayStateTool::Execute(const TSharedPtr<FJsonObject>& A
 			StateTreeObject->SetBoolField(TEXT("is_running"), StateTreeComponent->IsRunning());
 			StateTreeObject->SetBoolField(TEXT("is_paused"), StateTreeComponent->IsPaused());
 #if WITH_GAMEPLAY_DEBUGGER
-			TArray<TSharedPtr<FJsonValue>> ActiveStateNames;
+			TArray<TSharedPtr<FJsonValue>> ActiveStateNames;	
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 			TArray<FName> ActiveStates = StateTreeComponent->GetActiveStateNames();
 			for (const FName& ActiveState : ActiveStates)
 			{
 				ActiveStateNames.Add(MakeShareable(new FJsonValueString(ActiveState.ToString())));
 			}
+#else
+			// UE 5.4 does not have GetActiveStateNames on UStateTreeComponent directly
+			FString RunStatusStr = QueryGameplayStateToolPrivate::LexToStringStateTreeRunStatus(RunStatus);
+			ActiveStateNames.Add(MakeShareable(new FJsonValueString(RunStatusStr)));
+#endif
 			StateTreeObject->SetArrayField(TEXT("active_state_names"), ActiveStateNames);
 #endif
 			Response->SetObjectField(TEXT("state_tree"), StateTreeObject);

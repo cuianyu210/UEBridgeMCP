@@ -1,6 +1,7 @@
 // Copyright uuuuzz 2024-2026. All Rights Reserved.
 
 #include "Tools/StateTree/AddStateTreeTransitionTool.h"
+#include "Misc/EngineVersionComparison.h"
 #include "UEBridgeMCPEditor.h"
 #include "StateTree.h"
 #include "StateTreeState.h"
@@ -158,7 +159,19 @@ FMcpToolResult UAddStateTreeTransitionTool::Execute(
 	EStateTreeTransitionPriority Priority = EStateTreeTransitionPriority::Normal;
 	if (PriorityStr.Equals(TEXT("Low"), ESearchCase::IgnoreCase))
 	{
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
 		Priority = EStateTreeTransitionPriority::Low;
+#else
+		Priority = EStateTreeTransitionPriority::Normal; // 5.4 lacks Low priority
+#endif
+	}
+	else if (PriorityStr.Equals(TEXT("Medium"), ESearchCase::IgnoreCase))
+	{
+#if ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
+		Priority = EStateTreeTransitionPriority::Normal; // Lacks medium in 5.6? wait
+#else
+		Priority = EStateTreeTransitionPriority::Medium;
+#endif
 	}
 	else if (PriorityStr.Equals(TEXT("High"), ESearchCase::IgnoreCase))
 	{
