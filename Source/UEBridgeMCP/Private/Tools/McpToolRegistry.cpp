@@ -2,6 +2,8 @@
 
 #include "Tools/McpToolRegistry.h"
 #include "UEBridgeMCP.h"
+#include "UObject/Package.h"
+#include "UObject/UObjectGlobals.h"
 
 FMcpToolRegistry* FMcpToolRegistry::Instance = nullptr;
 

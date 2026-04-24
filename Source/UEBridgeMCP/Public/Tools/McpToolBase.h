@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "HAL/ThreadSafeBool.h"
 #include "UObject/Object.h"
 #include "Protocol/McpTypes.h"
 #include "Tools/McpToolResult.h"

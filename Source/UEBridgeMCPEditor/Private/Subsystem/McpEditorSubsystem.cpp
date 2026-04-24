@@ -23,8 +23,8 @@ void UMcpEditorSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 	// Create server instance
 	Server = MakeUnique<FMcpServer>();
 
-	// Auto-start if configured
-	if (Settings && Settings->bAutoStartServer)
+	// Auto-start if configured (skip if running as a commandlet, e.g. during cooking/packaging)
+	if (Settings && Settings->bAutoStartServer && !IsRunningCommandlet())
 	{
 		StartServer();
 	}
