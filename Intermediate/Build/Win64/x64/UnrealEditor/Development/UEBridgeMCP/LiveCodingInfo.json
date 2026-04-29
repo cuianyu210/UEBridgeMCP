@@ -1,0 +1,18 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.UEBridgeMCP.cpp.obj": [
+			"McpCapabilities.gen.cpp.obj",
+			"McpToolBase.gen.cpp.obj",
+			"McpToolResult.gen.cpp.obj",
+			"McpTypes.gen.cpp.obj",
+			"UEBridgeMCP.init.gen.cpp.obj",
+			"McpCapabilities.cpp.obj",
+			"McpTypes.cpp.obj",
+			"McpToolBase.cpp.obj",
+			"McpToolRegistry.cpp.obj",
+			"McpToolResult.cpp.obj",
+			"UEBridgeMCP.cpp.obj"
+		]
+	}
+}

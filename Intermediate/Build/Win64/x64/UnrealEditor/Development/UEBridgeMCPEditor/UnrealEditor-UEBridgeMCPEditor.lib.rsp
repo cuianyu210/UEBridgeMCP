@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-UEBridgeMCPEditor.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
+"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\Module.UEBridgeMCPEditor.1.cpp.obj"
+"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\Module.UEBridgeMCPEditor.2.cpp.obj"
+"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\Module.UEBridgeMCPEditor.3.cpp.obj"
+"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\Module.UEBridgeMCPEditor.4.cpp.obj"
+"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\Default.rc2.res"
+/OUT:"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCPEditor\UnrealEditor-UEBridgeMCPEditor.lib"

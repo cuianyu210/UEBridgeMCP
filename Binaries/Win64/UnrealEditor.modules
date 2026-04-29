@@ -1,0 +1,8 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"UEBridgeMCP": "UnrealEditor-UEBridgeMCP.dll",
+		"UEBridgeMCPEditor": "UnrealEditor-UEBridgeMCPEditor.dll"
+	}
+}
