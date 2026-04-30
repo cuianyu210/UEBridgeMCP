@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UFindReferencesTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for finding references to assets, Blueprint variables, and nodes.\n *\n * Supports three reference types:\n * - \"asset\": Find all assets that reference the given asset\n * - \"property\": Find where a Blueprint variable is used within its own graphs\n * - \"node\": Find all usages of a specific node type or function call\n *\n * Uses UE5's Find in Blueprints (FiB) cache for faster searching when available.\n */" },
+#endif
 		{ "IncludePath", "Tools/References/FindReferencesTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/References/FindReferencesTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for finding references to assets, Blueprint variables, and nodes.\n\nSupports three reference types:\n- \"asset\": Find all assets that reference the given asset\n- \"property\": Find where a Blueprint variable is used within its own graphs\n- \"node\": Find all usages of a specific node type or function call\n\nUses UE5's Find in Blueprints (FiB) cache for faster searching when available." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UFindReferencesTool::~UFindReferencesTool() {}
 // End Class UFindReferencesTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UFindReferencesTool, UFindReferencesTool::StaticClass, TEXT("UFindReferencesTool"), &Z_Registration_Info_UClass_UFindReferencesTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFindReferencesTool), 1275840453U) },
+		{ Z_Construct_UClass_UFindReferencesTool, UFindReferencesTool::StaticClass, TEXT("UFindReferencesTool"), &Z_Registration_Info_UClass_UFindReferencesTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFindReferencesTool), 1874124503U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_2808281712(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_202261670(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_References_FindReferencesTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

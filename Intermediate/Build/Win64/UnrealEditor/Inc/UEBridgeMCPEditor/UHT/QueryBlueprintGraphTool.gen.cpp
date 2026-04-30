@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryBlueprintGraphTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Consolidated tool for Blueprint graph inspection.\n * Replaces: get-blueprint-graph, get-blueprint-node, list-blueprint-callables, get-callable-details\n *\n * Usage modes:\n * - No special params: List all graphs with nodes (like get-blueprint-graph)\n * - node_guid: Get specific node details (like get-blueprint-node)\n * - callable_name: Get specific callable's graph (like get-callable-details)\n * - list_callables=true: List all callables without full graphs (like list-blueprint-callables)\n */" },
+#endif
 		{ "IncludePath", "Tools/Blueprint/QueryBlueprintGraphTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Blueprint/QueryBlueprintGraphTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consolidated tool for Blueprint graph inspection.\nReplaces: get-blueprint-graph, get-blueprint-node, list-blueprint-callables, get-callable-details\n\nUsage modes:\n- No special params: List all graphs with nodes (like get-blueprint-graph)\n- node_guid: Get specific node details (like get-blueprint-node)\n- callable_name: Get specific callable's graph (like get-callable-details)\n- list_callables=true: List all callables without full graphs (like list-blueprint-callables)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryBlueprintGraphTool::~UQueryBlueprintGraphTool() {}
 // End Class UQueryBlueprintGraphTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryBlueprintGraphTool, UQueryBlueprintGraphTool::StaticClass, TEXT("UQueryBlueprintGraphTool"), &Z_Registration_Info_UClass_UQueryBlueprintGraphTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryBlueprintGraphTool), 2785430403U) },
+		{ Z_Construct_UClass_UQueryBlueprintGraphTool, UQueryBlueprintGraphTool::StaticClass, TEXT("UQueryBlueprintGraphTool"), &Z_Registration_Info_UClass_UQueryBlueprintGraphTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryBlueprintGraphTool), 45268098U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_1361414895(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_3308915055(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintGraphTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

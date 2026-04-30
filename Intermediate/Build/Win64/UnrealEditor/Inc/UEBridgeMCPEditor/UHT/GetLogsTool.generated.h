@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UEBRIDGEMCPEDITOR_GetLogsTool_generated_h
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUGetLogsTool(); \
 	friend struct Z_Construct_UClass_UGetLogsTool_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UGetLogsTool)
 
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UGetLogsTool(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~UGetLogsTool();
 
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_13_PROLOG
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_13_PROLOG
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> UEBRIDGEMCPEDITOR_API UClass* StaticClass<class UGetLogsTool>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h
+#define CURRENT_FILE_ID FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

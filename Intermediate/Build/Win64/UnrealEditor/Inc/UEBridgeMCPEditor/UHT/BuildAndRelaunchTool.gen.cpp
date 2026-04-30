@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UBuildAndRelaunchTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Close THIS editor instance, trigger a full project build, and relaunch the editor.\n * This tool handles the complete workflow for rebuilding the project.\n * Uses process ID (PID) to ensure only the MCP-connected editor instance is affected.\n * Other running editor instances are not affected.\n * Windows only.\n */" },
+#endif
 		{ "IncludePath", "Tools/Build/BuildAndRelaunchTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Build/BuildAndRelaunchTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Close THIS editor instance, trigger a full project build, and relaunch the editor.\nThis tool handles the complete workflow for rebuilding the project.\nUses process ID (PID) to ensure only the MCP-connected editor instance is affected.\nOther running editor instances are not affected.\nWindows only." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UBuildAndRelaunchTool::~UBuildAndRelaunchTool() {}
 // End Class UBuildAndRelaunchTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBuildAndRelaunchTool, UBuildAndRelaunchTool::StaticClass, TEXT("UBuildAndRelaunchTool"), &Z_Registration_Info_UClass_UBuildAndRelaunchTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBuildAndRelaunchTool), 39958273U) },
+		{ Z_Construct_UClass_UBuildAndRelaunchTool, UBuildAndRelaunchTool::StaticClass, TEXT("UBuildAndRelaunchTool"), &Z_Registration_Info_UClass_UBuildAndRelaunchTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBuildAndRelaunchTool), 2468075741U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_145680127(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_2869087799(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_BuildAndRelaunchTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

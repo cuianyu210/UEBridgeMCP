@@ -33,12 +33,16 @@ struct Z_Construct_UEnum_UEBridgeMCP_EMcpContentType_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Content type for tool results\n */" },
+#endif
 		{ "Image.Name", "EMcpContentType::Image" },
 		{ "ModuleRelativePath", "Public/Tools/McpToolResult.h" },
 		{ "Resource.Name", "EMcpContentType::Resource" },
 		{ "Text.Name", "EMcpContentType::Text" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Content type for tool results" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -88,19 +92,31 @@ struct Z_Construct_UScriptStruct_FMcpToolResult_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool execution result\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tools/McpToolResult.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool execution result" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSuccess_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether execution succeeded */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tools/McpToolResult.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether execution succeeded" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsError_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Is this an error result */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tools/McpToolResult.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is this an error result" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bSuccess_SetBit(void* Obj);
@@ -153,18 +169,18 @@ UScriptStruct* Z_Construct_UScriptStruct_FMcpToolResult()
 // End ScriptStruct FMcpToolResult
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMcpContentType_StaticEnum, TEXT("EMcpContentType"), &Z_Registration_Info_UEnum_EMcpContentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2373636034U) },
+		{ EMcpContentType_StaticEnum, TEXT("EMcpContentType"), &Z_Registration_Info_UEnum_EMcpContentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3364525450U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMcpToolResult::StaticStruct, Z_Construct_UScriptStruct_FMcpToolResult_Statics::NewStructOps, TEXT("McpToolResult"), &Z_Registration_Info_UScriptStruct_McpToolResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolResult), 1636162362U) },
+		{ FMcpToolResult::StaticStruct, Z_Construct_UScriptStruct_FMcpToolResult_Statics::NewStructOps, TEXT("McpToolResult"), &Z_Registration_Info_UScriptStruct_McpToolResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolResult), 316273765U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_1870739923(TEXT("/Script/UEBridgeMCP"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_1738810750(TEXT("/Script/UEBridgeMCP"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

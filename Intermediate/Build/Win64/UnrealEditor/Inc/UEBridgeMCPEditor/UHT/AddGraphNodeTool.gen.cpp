@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UAddGraphNodeTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Add a node to a Blueprint or Material graph.\n * Uses dynamic class resolution - accepts any material expression or Blueprint node class name.\n *\n * For Materials: Use expression class names like \"MaterialExpressionAdd\",\n * \"MaterialExpressionSceneTexture\", \"MaterialExpressionCollectionParameter\", etc.\n *\n * For Blueprints: Use node class names like \"K2Node_CallFunction\",\n * \"K2Node_VariableGet\", \"K2Node_Event\", etc.\n */" },
+#endif
 		{ "IncludePath", "Tools/Write/AddGraphNodeTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Write/AddGraphNodeTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a node to a Blueprint or Material graph.\nUses dynamic class resolution - accepts any material expression or Blueprint node class name.\n\nFor Materials: Use expression class names like \"MaterialExpressionAdd\",\n\"MaterialExpressionSceneTexture\", \"MaterialExpressionCollectionParameter\", etc.\n\nFor Blueprints: Use node class names like \"K2Node_CallFunction\",\n\"K2Node_VariableGet\", \"K2Node_Event\", etc." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UAddGraphNodeTool::~UAddGraphNodeTool() {}
 // End Class UAddGraphNodeTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAddGraphNodeTool, UAddGraphNodeTool::StaticClass, TEXT("UAddGraphNodeTool"), &Z_Registration_Info_UClass_UAddGraphNodeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddGraphNodeTool), 893507636U) },
+		{ Z_Construct_UClass_UAddGraphNodeTool, UAddGraphNodeTool::StaticClass, TEXT("UAddGraphNodeTool"), &Z_Registration_Info_UClass_UAddGraphNodeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddGraphNodeTool), 3042627654U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_1845994512(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_1718911849(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_AddGraphNodeTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

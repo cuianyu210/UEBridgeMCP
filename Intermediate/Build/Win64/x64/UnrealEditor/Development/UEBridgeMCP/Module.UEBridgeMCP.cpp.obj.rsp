@@ -1,11 +1,11 @@
-"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp"
-/FI"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\SharedPCH.CoreUObject.Cpp20.h"
-/FI"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Definitions.UEBridgeMCP.h"
-/Yu"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\SharedPCH.CoreUObject.Cpp20.h"
-/Fp"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\SharedPCH.CoreUObject.Cpp20.h.pch"
-/Fo"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.obj"
-/sourceDependencies "..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.dep.json"
-@"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\UEBridgeMCP.Shared.rsp"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp"
+/FI"D:\Projects\NetWorkLearn\Intermediate\Build\Win64\x64\NetWorkLearnEditor\Development\CoreUObject\SharedPCH.CoreUObject.Project.ValApi.Cpp20.h"
+/FI"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Definitions.UEBridgeMCP.h"
+/Yu"D:\Projects\NetWorkLearn\Intermediate\Build\Win64\x64\NetWorkLearnEditor\Development\CoreUObject\SharedPCH.CoreUObject.Project.ValApi.Cpp20.h"
+/Fp"D:\Projects\NetWorkLearn\Intermediate\Build\Win64\x64\NetWorkLearnEditor\Development\CoreUObject\SharedPCH.CoreUObject.Project.ValApi.Cpp20.h.pch"
+/Fo"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.obj"
+/sourceDependencies "D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.dep.json"
+@"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\UEBridgeMCP.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

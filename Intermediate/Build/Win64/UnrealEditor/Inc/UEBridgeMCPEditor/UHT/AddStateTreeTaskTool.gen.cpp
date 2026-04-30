@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UAddStateTreeTaskTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for adding a task to a state in a StateTree asset.\n */" },
+#endif
 		{ "IncludePath", "Tools/StateTree/AddStateTreeTaskTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/StateTree/AddStateTreeTaskTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for adding a task to a state in a StateTree asset." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UAddStateTreeTaskTool::~UAddStateTreeTaskTool() {}
 // End Class UAddStateTreeTaskTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAddStateTreeTaskTool, UAddStateTreeTaskTool::StaticClass, TEXT("UAddStateTreeTaskTool"), &Z_Registration_Info_UClass_UAddStateTreeTaskTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddStateTreeTaskTool), 655549783U) },
+		{ Z_Construct_UClass_UAddStateTreeTaskTool, UAddStateTreeTaskTool::StaticClass, TEXT("UAddStateTreeTaskTool"), &Z_Registration_Info_UClass_UAddStateTreeTaskTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddStateTreeTaskTool), 2332192517U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_3103838847(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_2994402870(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTaskTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

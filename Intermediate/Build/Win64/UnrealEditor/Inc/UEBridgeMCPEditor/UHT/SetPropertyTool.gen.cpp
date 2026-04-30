@@ -29,10 +29,14 @@ struct Z_Construct_UClass_USetPropertyTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Universal property setter tool.\n * Sets any property on any asset type using UE reflection.\n *\n * Supports:\n * - Simple properties (int, float, bool, string, name, text)\n * - Nested properties via dot notation (e.g., \"Stats.MaxHealth\")\n * - Array elements via bracket notation (e.g., \"Items[0].Value\")\n * - Struct properties (as JSON objects or arrays for FVector, FRotator, FLinearColor)\n * - Enum properties (by name or integer value)\n *\n * Examples:\n * - Blueprint variable: { \"asset_path\": \"/Game/BP_Player\", \"property_path\": \"Health\", \"value\": 100 }\n * - Nested struct: { \"asset_path\": \"/Game/BP_Player\", \"property_path\": \"Stats.MaxHealth\", \"value\": 200 }\n * - Vector: { \"asset_path\": \"/Game/BP_Actor\", \"property_path\": \"Location\", \"value\": [100, 200, 0] }\n * - Enum: { \"asset_path\": \"/Game/BP_Actor\", \"property_path\": \"State\", \"value\": \"Active\" }\n */" },
+#endif
 		{ "IncludePath", "Tools/Write/SetPropertyTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Write/SetPropertyTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Universal property setter tool.\nSets any property on any asset type using UE reflection.\n\nSupports:\n- Simple properties (int, float, bool, string, name, text)\n- Nested properties via dot notation (e.g., \"Stats.MaxHealth\")\n- Array elements via bracket notation (e.g., \"Items[0].Value\")\n- Struct properties (as JSON objects or arrays for FVector, FRotator, FLinearColor)\n- Enum properties (by name or integer value)\n\nExamples:\n- Blueprint variable: { \"asset_path\": \"/Game/BP_Player\", \"property_path\": \"Health\", \"value\": 100 }\n- Nested struct: { \"asset_path\": \"/Game/BP_Player\", \"property_path\": \"Stats.MaxHealth\", \"value\": 200 }\n- Vector: { \"asset_path\": \"/Game/BP_Actor\", \"property_path\": \"Location\", \"value\": [100, 200, 0] }\n- Enum: { \"asset_path\": \"/Game/BP_Actor\", \"property_path\": \"State\", \"value\": \"Active\" }" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ USetPropertyTool::~USetPropertyTool() {}
 // End Class USetPropertyTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USetPropertyTool, USetPropertyTool::StaticClass, TEXT("USetPropertyTool"), &Z_Registration_Info_UClass_USetPropertyTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USetPropertyTool), 3281278566U) },
+		{ Z_Construct_UClass_USetPropertyTool, USetPropertyTool::StaticClass, TEXT("USetPropertyTool"), &Z_Registration_Info_UClass_USetPropertyTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USetPropertyTool), 2453787574U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_1186688923(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_2152130504(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_SetPropertyTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

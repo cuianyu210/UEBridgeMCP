@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryAssetTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Consolidated tool for asset operations.\n * Replaces: search-assets, inspect-asset, inspect-data-asset\n *\n * Usage modes:\n * - query param: Search for assets (like search-assets)\n * - asset_path param: Inspect specific asset (like inspect-asset/inspect-data-asset)\n */" },
+#endif
 		{ "IncludePath", "Tools/Asset/QueryAssetTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Asset/QueryAssetTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consolidated tool for asset operations.\nReplaces: search-assets, inspect-asset, inspect-data-asset\n\nUsage modes:\n- query param: Search for assets (like search-assets)\n- asset_path param: Inspect specific asset (like inspect-asset/inspect-data-asset)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryAssetTool::~UQueryAssetTool() {}
 // End Class UQueryAssetTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryAssetTool, UQueryAssetTool::StaticClass, TEXT("UQueryAssetTool"), &Z_Registration_Info_UClass_UQueryAssetTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryAssetTool), 3745673884U) },
+		{ Z_Construct_UClass_UQueryAssetTool, UQueryAssetTool::StaticClass, TEXT("UQueryAssetTool"), &Z_Registration_Info_UClass_UQueryAssetTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryAssetTool), 2742529933U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_2570111117(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_4294599240(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_QueryAssetTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

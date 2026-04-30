@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\utils\\mcpassetmodifier.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\utils\\mcpassetmodifier.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\utils\\mcppropertyserializer.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\kismet2\\kismeteditorutilities.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\kismet2\\blueprinteditorutils.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\classviewer\\public\\classviewermodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\assetregistrymodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\iassetregistry.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\misc\\assetregistryinterface.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assetregistry\\uht\\iassetregistry.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\uobject\\savepackage.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\serialization\\packagewriter.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\io\\iodispatcher.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\io\\iobuffer.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\io\\iocontainerid.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\io\\iostatus.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\ienginecrypto.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\serialization\\compactbinary.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectconverter.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectwrapper.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\jsonutilities\\uht\\jsonobjectwrapper.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\engine\\public\\engineutils.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

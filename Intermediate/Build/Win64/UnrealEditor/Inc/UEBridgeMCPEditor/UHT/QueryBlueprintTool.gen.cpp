@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryBlueprintTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Consolidated tool for Blueprint structure analysis.\n * Replaces: analyze-blueprint, get-blueprint-functions, get-blueprint-variables,\n *           get-blueprint-components, get-blueprint-defaults\n */" },
+#endif
 		{ "IncludePath", "Tools/Blueprint/QueryBlueprintTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Blueprint/QueryBlueprintTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consolidated tool for Blueprint structure analysis.\nReplaces: analyze-blueprint, get-blueprint-functions, get-blueprint-variables,\n          get-blueprint-components, get-blueprint-defaults" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryBlueprintTool::~UQueryBlueprintTool() {}
 // End Class UQueryBlueprintTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryBlueprintTool, UQueryBlueprintTool::StaticClass, TEXT("UQueryBlueprintTool"), &Z_Registration_Info_UClass_UQueryBlueprintTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryBlueprintTool), 3909812903U) },
+		{ Z_Construct_UClass_UQueryBlueprintTool, UQueryBlueprintTool::StaticClass, TEXT("UQueryBlueprintTool"), &Z_Registration_Info_UClass_UQueryBlueprintTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryBlueprintTool), 1287332429U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_661978066(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_1618409225(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Blueprint_QueryBlueprintTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

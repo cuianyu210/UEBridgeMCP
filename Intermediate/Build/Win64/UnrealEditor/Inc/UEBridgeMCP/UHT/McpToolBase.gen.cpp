@@ -35,9 +35,13 @@ struct Z_Construct_UScriptStruct_FMcpToolContext_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool execution context\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Tools/McpToolBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool execution context" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void* NewStructOps()
@@ -82,10 +86,14 @@ struct Z_Construct_UClass_UMcpToolBase_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Abstract base class for MCP tools\n */" },
+#endif
 		{ "IncludePath", "Tools/McpToolBase.h" },
 		{ "ModuleRelativePath", "Public/Tools/McpToolBase.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Abstract base class for MCP tools" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -132,18 +140,18 @@ UMcpToolBase::~UMcpToolBase() {}
 // End Class UMcpToolBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMcpToolContext::StaticStruct, Z_Construct_UScriptStruct_FMcpToolContext_Statics::NewStructOps, TEXT("McpToolContext"), &Z_Registration_Info_UScriptStruct_McpToolContext, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolContext), 220533223U) },
+		{ FMcpToolContext::StaticStruct, Z_Construct_UScriptStruct_FMcpToolContext_Statics::NewStructOps, TEXT("McpToolContext"), &Z_Registration_Info_UScriptStruct_McpToolContext, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolContext), 3949239211U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMcpToolBase, UMcpToolBase::StaticClass, TEXT("UMcpToolBase"), &Z_Registration_Info_UClass_UMcpToolBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpToolBase), 4191865523U) },
+		{ Z_Construct_UClass_UMcpToolBase, UMcpToolBase::StaticClass, TEXT("UMcpToolBase"), &Z_Registration_Info_UClass_UMcpToolBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpToolBase), 1980728211U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_4242075356(TEXT("/Script/UEBridgeMCP"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_1851213480(TEXT("/Script/UEBridgeMCP"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

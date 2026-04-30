@@ -39,7 +39,9 @@ struct Z_Construct_UEnum_UEBridgeMCP_EMcpMethod_Statics
 		{ "CancelledNotification.Comment", "// Notifications\n" },
 		{ "CancelledNotification.Name", "EMcpMethod::CancelledNotification" },
 		{ "CancelledNotification.ToolTip", "Notifications" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * MCP request methods\n */" },
+#endif
 		{ "Initialize.Comment", "// Lifecycle\n" },
 		{ "Initialize.Name", "EMcpMethod::Initialize" },
 		{ "Initialize.ToolTip", "Lifecycle" },
@@ -64,7 +66,9 @@ struct Z_Construct_UEnum_UEBridgeMCP_EMcpMethod_Statics
 		{ "ToolsList.Name", "EMcpMethod::ToolsList" },
 		{ "ToolsList.ToolTip", "Tools" },
 		{ "ToolsListChanged.Name", "EMcpMethod::ToolsListChanged" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MCP request methods" },
+#endif
 		{ "Unknown.Name", "EMcpMethod::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -129,24 +133,40 @@ struct Z_Construct_UScriptStruct_FMcpRequest_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * JSON-RPC Request structure\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSON-RPC Request structure" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JsonRpc_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** JSON-RPC version (always \"2.0\") */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSON-RPC version (always \"2.0\")" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Id_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Request ID (string or number, stored as string) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Request ID (string or number, stored as string)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Method_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Method name */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Method name" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_JsonRpc;
@@ -209,19 +229,31 @@ struct Z_Construct_UScriptStruct_FMcpResponse_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * JSON-RPC Response structure\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSON-RPC Response structure" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JsonRpc_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** JSON-RPC version */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "JSON-RPC version" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Id_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Request ID (matches request) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Request ID (matches request)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_JsonRpc;
@@ -281,9 +313,13 @@ struct Z_Construct_UScriptStruct_FMcpSchemaProperty_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool input schema property\n * Supports nested object schemas and array<object> item schemas.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool input schema property\nSupports nested object schemas and array<object> item schemas." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Type_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
@@ -298,19 +334,31 @@ struct Z_Construct_UScriptStruct_FMcpSchemaProperty_Statics
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemsType_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Items type for array properties (e.g., \"number\" for array of numbers) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Items type for array properties (e.g., \"number\" for array of numbers)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAdditionalProperties_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether additional properties are allowed (JSON Schema additionalProperties) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether additional properties are allowed (JSON Schema additionalProperties)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Format_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Optional format hint (e.g., \"uri\", \"date-time\") */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional format hint (e.g., \"uri\", \"date-time\")" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Type;
@@ -398,59 +446,103 @@ struct Z_Construct_UScriptStruct_FMcpToolDefinition_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool definition for MCP tools/list response\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool definition for MCP tools/list response" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Unique tool name */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Unique tool name" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Description_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Human-readable description */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Human-readable description" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Required_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Required property names */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Required property names" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Kind_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Tool kind: query, detail, batch, assert, utility */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool kind: query, detail, batch, assert, utility" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ResourceScope_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Primary resource scope */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Primary resource scope" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bMutates_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether the tool mutates editor state */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the tool mutates editor state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsBatch_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether the tool supports batched operations */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the tool supports batched operations" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsDryRun_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether the tool supports dry-run validation */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the tool supports dry-run validation" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsCompile_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether the tool can compile modified assets */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the tool can compile modified assets" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsSave_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Whether the tool can save modified assets */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the tool can save modified assets" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
@@ -545,21 +637,21 @@ UScriptStruct* Z_Construct_UScriptStruct_FMcpToolDefinition()
 // End ScriptStruct FMcpToolDefinition
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMcpMethod_StaticEnum, TEXT("EMcpMethod"), &Z_Registration_Info_UEnum_EMcpMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1592919465U) },
+		{ EMcpMethod_StaticEnum, TEXT("EMcpMethod"), &Z_Registration_Info_UEnum_EMcpMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 641928936U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMcpRequest::StaticStruct, Z_Construct_UScriptStruct_FMcpRequest_Statics::NewStructOps, TEXT("McpRequest"), &Z_Registration_Info_UScriptStruct_McpRequest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpRequest), 2716041486U) },
-		{ FMcpResponse::StaticStruct, Z_Construct_UScriptStruct_FMcpResponse_Statics::NewStructOps, TEXT("McpResponse"), &Z_Registration_Info_UScriptStruct_McpResponse, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpResponse), 3582657287U) },
-		{ FMcpSchemaProperty::StaticStruct, Z_Construct_UScriptStruct_FMcpSchemaProperty_Statics::NewStructOps, TEXT("McpSchemaProperty"), &Z_Registration_Info_UScriptStruct_McpSchemaProperty, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpSchemaProperty), 3595016719U) },
-		{ FMcpToolDefinition::StaticStruct, Z_Construct_UScriptStruct_FMcpToolDefinition_Statics::NewStructOps, TEXT("McpToolDefinition"), &Z_Registration_Info_UScriptStruct_McpToolDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolDefinition), 1434484130U) },
+		{ FMcpRequest::StaticStruct, Z_Construct_UScriptStruct_FMcpRequest_Statics::NewStructOps, TEXT("McpRequest"), &Z_Registration_Info_UScriptStruct_McpRequest, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpRequest), 3162874572U) },
+		{ FMcpResponse::StaticStruct, Z_Construct_UScriptStruct_FMcpResponse_Statics::NewStructOps, TEXT("McpResponse"), &Z_Registration_Info_UScriptStruct_McpResponse, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpResponse), 1045145146U) },
+		{ FMcpSchemaProperty::StaticStruct, Z_Construct_UScriptStruct_FMcpSchemaProperty_Statics::NewStructOps, TEXT("McpSchemaProperty"), &Z_Registration_Info_UScriptStruct_McpSchemaProperty, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpSchemaProperty), 992081535U) },
+		{ FMcpToolDefinition::StaticStruct, Z_Construct_UScriptStruct_FMcpToolDefinition_Statics::NewStructOps, TEXT("McpToolDefinition"), &Z_Registration_Info_UScriptStruct_McpToolDefinition, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpToolDefinition), 3192862582U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_13227084(TEXT("/Script/UEBridgeMCP"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_1388908707(TEXT("/Script/UEBridgeMCP"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpTypes_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

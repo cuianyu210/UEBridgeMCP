@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UWidgetBlueprintTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for inspecting Widget Blueprint-specific data including\n * widget hierarchy, slot information, and visibility settings.\n */" },
+#endif
 		{ "IncludePath", "Tools/Widget/WidgetBlueprintTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Widget/WidgetBlueprintTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for inspecting Widget Blueprint-specific data including\nwidget hierarchy, slot information, and visibility settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UWidgetBlueprintTool::~UWidgetBlueprintTool() {}
 // End Class UWidgetBlueprintTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWidgetBlueprintTool, UWidgetBlueprintTool::StaticClass, TEXT("UWidgetBlueprintTool"), &Z_Registration_Info_UClass_UWidgetBlueprintTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWidgetBlueprintTool), 3215063253U) },
+		{ Z_Construct_UClass_UWidgetBlueprintTool, UWidgetBlueprintTool::StaticClass, TEXT("UWidgetBlueprintTool"), &Z_Registration_Info_UClass_UWidgetBlueprintTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWidgetBlueprintTool), 951906295U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_1303790941(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_771828944(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Widget_WidgetBlueprintTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

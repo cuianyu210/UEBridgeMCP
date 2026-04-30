@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UTriggerLiveCodingTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Trigger Live Coding compilation for C++ code changes.\n * Uses UE's Live Coding system (Ctrl+Alt+F11 equivalent).\n * Supports both async and sync modes with compilation result tracking.\n * Windows only. Requires Live Coding to be enabled in Editor Preferences.\n */" },
+#endif
 		{ "IncludePath", "Tools/Build/TriggerLiveCodingTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Build/TriggerLiveCodingTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Trigger Live Coding compilation for C++ code changes.\nUses UE's Live Coding system (Ctrl+Alt+F11 equivalent).\nSupports both async and sync modes with compilation result tracking.\nWindows only. Requires Live Coding to be enabled in Editor Preferences." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UTriggerLiveCodingTool::~UTriggerLiveCodingTool() {}
 // End Class UTriggerLiveCodingTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTriggerLiveCodingTool, UTriggerLiveCodingTool::StaticClass, TEXT("UTriggerLiveCodingTool"), &Z_Registration_Info_UClass_UTriggerLiveCodingTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTriggerLiveCodingTool), 4170628798U) },
+		{ Z_Construct_UClass_UTriggerLiveCodingTool, UTriggerLiveCodingTool::StaticClass, TEXT("UTriggerLiveCodingTool"), &Z_Registration_Info_UClass_UTriggerLiveCodingTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTriggerLiveCodingTool), 1165908853U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_3427032669(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_2513168077(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Build_TriggerLiveCodingTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -1,7 +1,7 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.UEBridgeMCPEditor.1.cpp.obj": [
+		"Module.UEBridgeMCPEditor.cpp.obj": [
 			"AddComponentTool.gen.cpp.obj",
 			"AddDataTableRowTool.gen.cpp.obj",
 			"AddGraphNodeTool.gen.cpp.obj",
@@ -71,74 +71,6 @@
 			"ClassHierarchyTool.cpp.obj",
 			"CompileAssetsTool.cpp.obj",
 			"GetAssetDiffTool.cpp.obj"
-		],
-		"Module.UEBridgeMCPEditor.2.cpp.obj": [
-			"ImportAssetsTool.cpp.obj",
-			"ManageAssetsTool.cpp.obj",
-			"QueryAssetTool.cpp.obj",
-			"SourceControlAssetsTool.cpp.obj",
-			"AutoFixBlueprintCompileErrorsTool.cpp.obj",
-			"BlueprintScaffoldFromSpecTool.cpp.obj",
-			"EditBlueprintComponentsTool.cpp.obj",
-			"EditBlueprintGraphTool.cpp.obj",
-			"EditBlueprintMembersTool.cpp.obj",
-			"QueryBlueprintGraphSummaryTool.cpp.obj",
-			"QueryBlueprintGraphTool.cpp.obj",
-			"QueryBlueprintNodeTool.cpp.obj",
-			"QueryBlueprintSummaryTool.cpp.obj",
-			"QueryBlueprintTool.cpp.obj",
-			"BuildAndRelaunchTool.cpp.obj",
-			"TriggerLiveCodingTool.cpp.obj",
-			"CallFunctionTool.cpp.obj",
-			"CaptureViewportTool.cpp.obj",
-			"GetLogsTool.cpp.obj",
-			"EditLevelActorTool.cpp.obj",
-			"EditLevelBatchTool.cpp.obj",
-			"GenerateLevelStructureTool.cpp.obj",
-			"QueryActorDetailTool.cpp.obj",
-			"QueryLevelSummaryTool.cpp.obj",
-			"QueryLevelTool.cpp.obj"
-		],
-		"Module.UEBridgeMCPEditor.3.cpp.obj": [
-			"QueryWorldSummaryTool.cpp.obj",
-			"QueryWorldTool.cpp.obj",
-			"ApplyMaterialTool.cpp.obj",
-			"EditMaterialInstanceBatchTool.cpp.obj",
-			"EditMaterialInstanceTool.cpp.obj",
-			"QueryMaterialInstanceTool.cpp.obj",
-			"QueryMaterialSummaryTool.cpp.obj",
-			"QueryMaterialTool.cpp.obj",
-			"AssertWorldStateTool.cpp.obj",
-			"PieInputTool.cpp.obj",
-			"PieSessionTool.cpp.obj",
-			"QueryGameplayStateTool.cpp.obj",
-			"WaitForWorldConditionTool.cpp.obj",
-			"ProjectInfoTool.cpp.obj",
-			"FindReferencesTool.cpp.obj",
-			"RunPythonScriptTool.cpp.obj",
-			"AddStateTreeStateTool.cpp.obj",
-			"AddStateTreeTaskTool.cpp.obj",
-			"AddStateTreeTransitionTool.cpp.obj",
-			"QueryStateTreeTool.cpp.obj",
-			"RemoveStateTreeStateTool.cpp.obj",
-			"WidgetBlueprintTool.cpp.obj",
-			"AddComponentTool.cpp.obj",
-			"AddDataTableRowTool.cpp.obj",
-			"AddGraphNodeTool.cpp.obj",
-			"AddWidgetTool.cpp.obj",
-			"ConnectGraphPinsTool.cpp.obj",
-			"CreateAssetTool.cpp.obj",
-			"DisconnectGraphPinTool.cpp.obj",
-			"RemoveGraphNodeTool.cpp.obj",
-			"SetPropertyTool.cpp.obj",
-			"SpawnActorTool.cpp.obj",
-			"UEBridgeMCPEditor.cpp.obj",
-			"McpToolbarExtension.cpp.obj",
-			"McpAssetModifier.cpp.obj"
-		],
-		"Module.UEBridgeMCPEditor.4.cpp.obj": [
-			"McpPropertySerializer.cpp.obj",
-			"McpV2ToolUtils.cpp.obj"
 		]
 	}
 }

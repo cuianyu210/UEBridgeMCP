@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UProjectInfoTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for retrieving project and plugin information.\n * Returns project name, path, plugin version, and optionally project settings.\n */" },
+#endif
 		{ "IncludePath", "Tools/Project/ProjectInfoTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Project/ProjectInfoTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for retrieving project and plugin information.\nReturns project name, path, plugin version, and optionally project settings." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UProjectInfoTool::~UProjectInfoTool() {}
 // End Class UProjectInfoTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UProjectInfoTool, UProjectInfoTool::StaticClass, TEXT("UProjectInfoTool"), &Z_Registration_Info_UClass_UProjectInfoTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UProjectInfoTool), 1349227337U) },
+		{ Z_Construct_UClass_UProjectInfoTool, UProjectInfoTool::StaticClass, TEXT("UProjectInfoTool"), &Z_Registration_Info_UClass_UProjectInfoTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UProjectInfoTool), 1000509860U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_1280577938(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_4176990151(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Project_ProjectInfoTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

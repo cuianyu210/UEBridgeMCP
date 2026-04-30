@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UGetLogsTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * MCP tool to retrieve Unreal Engine output log entries for debugging.\n * Supports filtering by category, severity level, and message content.\n */" },
+#endif
 		{ "IncludePath", "Tools/Debug/GetLogsTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Debug/GetLogsTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MCP tool to retrieve Unreal Engine output log entries for debugging.\nSupports filtering by category, severity level, and message content." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UGetLogsTool::~UGetLogsTool() {}
 // End Class UGetLogsTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGetLogsTool, UGetLogsTool::StaticClass, TEXT("UGetLogsTool"), &Z_Registration_Info_UClass_UGetLogsTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGetLogsTool), 276462302U) },
+		{ Z_Construct_UClass_UGetLogsTool, UGetLogsTool::StaticClass, TEXT("UGetLogsTool"), &Z_Registration_Info_UClass_UGetLogsTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGetLogsTool), 2384594240U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_98813280(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_994455851(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Debug_GetLogsTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

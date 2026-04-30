@@ -29,10 +29,14 @@ struct Z_Construct_UClass_URunPythonScriptTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Execute Python scripts in Unreal Editor's Python environment.\n * Requires PythonScriptPlugin to be enabled.\n * Supports inline scripts or script files with optional arguments.\n */" },
+#endif
 		{ "IncludePath", "Tools/Scripting/RunPythonScriptTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Scripting/RunPythonScriptTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Execute Python scripts in Unreal Editor's Python environment.\nRequires PythonScriptPlugin to be enabled.\nSupports inline scripts or script files with optional arguments." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ URunPythonScriptTool::~URunPythonScriptTool() {}
 // End Class URunPythonScriptTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_URunPythonScriptTool, URunPythonScriptTool::StaticClass, TEXT("URunPythonScriptTool"), &Z_Registration_Info_UClass_URunPythonScriptTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URunPythonScriptTool), 3388266472U) },
+		{ Z_Construct_UClass_URunPythonScriptTool, URunPythonScriptTool::StaticClass, TEXT("URunPythonScriptTool"), &Z_Registration_Info_UClass_URunPythonScriptTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URunPythonScriptTool), 711705269U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_613488411(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_1607413220(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Scripting_RunPythonScriptTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

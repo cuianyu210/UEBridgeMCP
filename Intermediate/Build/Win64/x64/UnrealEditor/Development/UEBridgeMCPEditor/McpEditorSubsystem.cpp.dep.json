@@ -1,0 +1,37 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\subsystem\\mcpeditorsubsystem.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\subsystem\\mcpeditorsubsystem.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\server\\mcpserver.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpservermodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\ihttprouter.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httprequesthandler.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpresultcallback.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpserverresponse.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpserverconstants.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpserverhttpversion.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httproutehandle.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httpserverrequest.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\online\\httpserver\\public\\httppath.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcptypes.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptypes.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcpcapabilities.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcpcapabilities.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcpeditor\\uht\\mcpeditorsubsystem.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\uebridgemcp.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\log\\mcplogcapture.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\slate\\public\\framework\\notifications\\notificationmanager.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\coreasynctasknotificationimpl.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\asynctasknotification.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\slate\\public\\widgets\\notifications\\snotificationlist.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

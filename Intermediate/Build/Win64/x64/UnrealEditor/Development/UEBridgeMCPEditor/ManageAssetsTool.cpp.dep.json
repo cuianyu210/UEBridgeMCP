@@ -1,0 +1,43 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\tools\\asset\\manageassetstool.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\tools\\asset\\manageassetstool.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolbase.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcptypes.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptypes.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolresult.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolresult.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolbase.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcpeditor\\uht\\manageassetstool.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\utils\\mcpassetmodifier.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\assettools\\public\\assettoolsmodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\assettools\\public\\iassettools.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\assettools\\public\\assettypecategories.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\assettools\\public\\iassettypeactions.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\merge\\public\\merge.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailmanager.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailrenderer.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailrenderer.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailmanager.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\automatedassetimportdata.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\automatedassetimportdata.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assettools\\uht\\iassettools.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\assetregistrymodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\iassetregistry.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\coreuobject\\public\\misc\\assetregistryinterface.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assetregistry\\uht\\iassetregistry.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\objecttools.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\collectionmanager\\public\\collectionmanagertypes.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\subsystems\\editorassetsubsystem.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\editorassetsubsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\tools\\asset\\getassetdifftool.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\tools\\asset\\getassetdifftool.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolbase.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcptypes.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptypes.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolresult.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolresult.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolbase.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcpeditor\\uht\\getassetdifftool.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\uebridgemcp.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\simpleconstructionscript.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\simpleconstructionscript.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\scs_node.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\scs_node.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\materials\\materialexpressionparameter.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\materialexpressionparameter.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\diffutils.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\propertyeditor\\public\\propertypath.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolmodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontroloperations.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontroloperationbase.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolpreferences.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\sourcecontrol\\uht\\sourcecontrolpreferences.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

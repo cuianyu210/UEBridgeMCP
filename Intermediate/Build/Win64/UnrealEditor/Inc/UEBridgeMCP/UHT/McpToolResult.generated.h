@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UEBRIDGEMCP_McpToolResult_generated_h
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_26_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h_26_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpToolResult_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpToolResult>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h
+#define CURRENT_FILE_ID FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolResult_h
 
 
 #define FOREACH_ENUM_EMCPCONTENTTYPE(op) \

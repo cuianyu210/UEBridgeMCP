@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\tools\\level\\generatelevelstructuretool.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\tools\\level\\generatelevelstructuretool.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolbase.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcptypes.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptypes.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolresult.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolresult.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolbase.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcpeditor\\uht\\generatelevelstructuretool.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\utils\\mcpassetmodifier.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\staticmeshactor.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\staticmeshactor.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\filehelpers.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\packagetools.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\packagetools.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\filehelpers.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -29,10 +29,14 @@ struct Z_Construct_UClass_URemoveGraphNodeTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Remove a node from a Blueprint or Material graph.\n */" },
+#endif
 		{ "IncludePath", "Tools/Write/RemoveGraphNodeTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Write/RemoveGraphNodeTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove a node from a Blueprint or Material graph." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ URemoveGraphNodeTool::~URemoveGraphNodeTool() {}
 // End Class URemoveGraphNodeTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_URemoveGraphNodeTool, URemoveGraphNodeTool::StaticClass, TEXT("URemoveGraphNodeTool"), &Z_Registration_Info_UClass_URemoveGraphNodeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URemoveGraphNodeTool), 3132506076U) },
+		{ Z_Construct_UClass_URemoveGraphNodeTool, URemoveGraphNodeTool::StaticClass, TEXT("URemoveGraphNodeTool"), &Z_Registration_Info_UClass_URemoveGraphNodeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URemoveGraphNodeTool), 2766809246U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_358650248(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_2523862981(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_RemoveGraphNodeTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

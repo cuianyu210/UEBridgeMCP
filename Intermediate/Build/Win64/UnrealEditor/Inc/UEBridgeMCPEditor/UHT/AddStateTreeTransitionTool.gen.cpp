@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UAddStateTreeTransitionTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for adding a transition between states in a StateTree asset.\n */" },
+#endif
 		{ "IncludePath", "Tools/StateTree/AddStateTreeTransitionTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/StateTree/AddStateTreeTransitionTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for adding a transition between states in a StateTree asset." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UAddStateTreeTransitionTool::~UAddStateTreeTransitionTool() {}
 // End Class UAddStateTreeTransitionTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAddStateTreeTransitionTool, UAddStateTreeTransitionTool::StaticClass, TEXT("UAddStateTreeTransitionTool"), &Z_Registration_Info_UClass_UAddStateTreeTransitionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddStateTreeTransitionTool), 245035437U) },
+		{ Z_Construct_UClass_UAddStateTreeTransitionTool, UAddStateTreeTransitionTool::StaticClass, TEXT("UAddStateTreeTransitionTool"), &Z_Registration_Info_UClass_UAddStateTreeTransitionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAddStateTreeTransitionTool), 1038441698U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_3178325524(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_747936250(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_AddStateTreeTransitionTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

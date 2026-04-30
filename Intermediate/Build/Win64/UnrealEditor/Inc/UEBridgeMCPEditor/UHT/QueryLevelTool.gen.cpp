@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryLevelTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for querying actors in the currently open level.\n * Can list actors with filtering, or get detailed info for a specific actor.\n */" },
+#endif
 		{ "IncludePath", "Tools/Level/QueryLevelTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Level/QueryLevelTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for querying actors in the currently open level.\nCan list actors with filtering, or get detailed info for a specific actor." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryLevelTool::~UQueryLevelTool() {}
 // End Class UQueryLevelTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryLevelTool, UQueryLevelTool::StaticClass, TEXT("UQueryLevelTool"), &Z_Registration_Info_UClass_UQueryLevelTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryLevelTool), 2859678653U) },
+		{ Z_Construct_UClass_UQueryLevelTool, UQueryLevelTool::StaticClass, TEXT("UQueryLevelTool"), &Z_Registration_Info_UClass_UQueryLevelTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryLevelTool), 2217368868U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_1163961498(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_3540409141(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Level_QueryLevelTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

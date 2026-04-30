@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UGetAssetDiffTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for diffing binary Unreal assets against SCM (Git/Perforce) base versions.\n * Returns structured JSON diff that can be consumed programmatically by AI assistants.\n *\n * Unlike visual diff tools (IAssetTools::DiffAssets), this returns text-based output.\n */" },
+#endif
 		{ "IncludePath", "Tools/Asset/GetAssetDiffTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Asset/GetAssetDiffTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for diffing binary Unreal assets against SCM (Git/Perforce) base versions.\nReturns structured JSON diff that can be consumed programmatically by AI assistants.\n\nUnlike visual diff tools (IAssetTools::DiffAssets), this returns text-based output." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UGetAssetDiffTool::~UGetAssetDiffTool() {}
 // End Class UGetAssetDiffTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UGetAssetDiffTool, UGetAssetDiffTool::StaticClass, TEXT("UGetAssetDiffTool"), &Z_Registration_Info_UClass_UGetAssetDiffTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGetAssetDiffTool), 258161035U) },
+		{ Z_Construct_UClass_UGetAssetDiffTool, UGetAssetDiffTool::StaticClass, TEXT("UGetAssetDiffTool"), &Z_Registration_Info_UClass_UGetAssetDiffTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGetAssetDiffTool), 3091087384U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_1292888912(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_3339133315(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_GetAssetDiffTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

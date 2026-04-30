@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UEBRIDGEMCP_McpToolBase_generated_h
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_18_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_18_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpToolContext_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpToolContext>();
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMcpToolBase(); \
 	friend struct Z_Construct_UClass_UMcpToolBase_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UMcpToolBase)
 
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMcpToolBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -44,12 +44,12 @@ public: \
 	NO_API virtual ~UMcpToolBase();
 
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_42_PROLOG
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_42_PROLOG
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_INCLASS_NO_PURE_DECLS \
-	FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_ENHANCED_CONSTRUCTORS \
+	FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_INCLASS_NO_PURE_DECLS \
+	FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h_45_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,7 +57,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> UEBRIDGEMCP_API UClass* StaticClass<class UMcpToolBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h
+#define CURRENT_FILE_ID FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Tools_McpToolBase_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

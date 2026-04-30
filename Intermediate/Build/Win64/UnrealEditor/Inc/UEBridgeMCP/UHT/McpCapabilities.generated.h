@@ -14,28 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UEBRIDGEMCP_McpCapabilities_generated_h
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_15_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_15_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpServerCapabilities_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpServerCapabilities>();
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_58_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_58_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpClientCapabilities_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpClientCapabilities>();
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_81_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_81_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpServerInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpServerInfo>();
 
-#define FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_98_GENERATED_BODY \
+#define FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_98_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMcpClientInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -43,7 +43,7 @@ template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpServerInfo>();
 template<> UEBRIDGEMCP_API UScriptStruct* StaticStruct<struct FMcpClientInfo>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h
+#define CURRENT_FILE_ID FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

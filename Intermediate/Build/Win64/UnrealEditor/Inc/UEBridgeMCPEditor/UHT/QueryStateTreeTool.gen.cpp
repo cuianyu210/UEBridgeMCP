@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryStateTreeTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for querying StateTree structure: states, transitions, tasks, evaluators, and parameters.\n */" },
+#endif
 		{ "IncludePath", "Tools/StateTree/QueryStateTreeTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/StateTree/QueryStateTreeTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for querying StateTree structure: states, transitions, tasks, evaluators, and parameters." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryStateTreeTool::~UQueryStateTreeTool() {}
 // End Class UQueryStateTreeTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryStateTreeTool, UQueryStateTreeTool::StaticClass, TEXT("UQueryStateTreeTool"), &Z_Registration_Info_UClass_UQueryStateTreeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryStateTreeTool), 3133197031U) },
+		{ Z_Construct_UClass_UQueryStateTreeTool, UQueryStateTreeTool::StaticClass, TEXT("UQueryStateTreeTool"), &Z_Registration_Info_UClass_UQueryStateTreeTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryStateTreeTool), 3492282805U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_3121644321(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_2517973218(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_StateTree_QueryStateTreeTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

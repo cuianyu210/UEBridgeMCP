@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\private\\tools\\asset\\sourcecontrolassetstool.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\networklearn\\intermediate\\build\\win64\\x64\\networklearneditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uebridgemcpeditor\\definitions.uebridgemcpeditor.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcpeditor\\public\\tools\\asset\\sourcecontrolassetstool.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolbase.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\protocol\\mcptypes.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptypes.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\source\\uebridgemcp\\public\\tools\\mcptoolresult.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolresult.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcp\\uht\\mcptoolbase.generated.h",
+            "d:\\projects\\networklearn\\plugins\\uebridgemcp\\intermediate\\build\\win64\\unrealeditor\\inc\\uebridgemcpeditor\\uht\\sourcecontrolassetstool.generated.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolmodule.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontroloperations.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontroloperationbase.h",
+            "d:\\ue5\\ue_5.4\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolpreferences.h",
+            "d:\\ue5\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\sourcecontrol\\uht\\sourcecontrolpreferences.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

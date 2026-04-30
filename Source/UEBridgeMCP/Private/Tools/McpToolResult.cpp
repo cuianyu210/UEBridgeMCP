@@ -1,6 +1,8 @@
 // Copyright uuuuzz 2024-2026. All Rights Reserved.
 
 #include "Tools/McpToolResult.h"
+#include "Serialization/JsonSerializer.h"
+#include "Policies/CondensedJsonPrintPolicy.h"
 
 namespace
 {
@@ -178,12 +180,22 @@ TSharedPtr<FJsonObject> FMcpToolResult::ToJson() const
 			ContentArray.Add(MakeShareable(new FJsonValueObject(ContentItem)));
 		}
 	}
-	JsonObject->SetArrayField(TEXT("content"), ContentArray);
 
 	if (StructuredContentPayload.IsValid())
 	{
 		JsonObject->SetObjectField(TEXT("structuredContent"), StructuredContentPayload);
+		
+		FString OutputString;
+		TSharedRef<TJsonWriter<TCHAR, TCondensedJsonPrintPolicy<TCHAR>>> Writer = TJsonWriterFactory<TCHAR, TCondensedJsonPrintPolicy<TCHAR>>::Create(&OutputString);
+		FJsonSerializer::Serialize(StructuredContentPayload.ToSharedRef(), Writer);
+		
+		TSharedPtr<FJsonObject> JsonPayloadContent = MakeShareable(new FJsonObject);
+		JsonPayloadContent->SetStringField(TEXT("type"), TEXT("text"));
+		JsonPayloadContent->SetStringField(TEXT("text"), OutputString);
+		ContentArray.Add(MakeShareable(new FJsonValueObject(JsonPayloadContent)));
 	}
+
+	JsonObject->SetArrayField(TEXT("content"), ContentArray);
 
 	if (bIsError)
 	{

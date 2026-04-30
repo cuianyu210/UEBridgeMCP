@@ -6,7 +6,13 @@
 /NAME:"UnrealEditor-UEBridgeMCP.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\SharedPCH.CoreUObject.Cpp20.h.obj"
-"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.obj"
-"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Default.rc2.res"
-/OUT:"..\Plugins\Editor\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\UnrealEditor-UEBridgeMCP.lib"
+"D:\Projects\NetWorkLearn\Intermediate\Build\Win64\x64\NetWorkLearnEditor\Development\CoreUObject\SharedPCH.CoreUObject.Project.ValApi.Cpp20.h.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Module.UEBridgeMCP.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\UEBridgeMCP.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\McpCapabilities.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\McpTypes.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\McpToolBase.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\McpToolRegistry.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\McpToolResult.cpp.obj"
+"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\Default.rc2.res"
+/OUT:"D:\Projects\NetWorkLearn\Plugins\UEBridgeMCP\Intermediate\Build\Win64\x64\UnrealEditor\Development\UEBridgeMCP\UnrealEditor-UEBridgeMCP.lib"

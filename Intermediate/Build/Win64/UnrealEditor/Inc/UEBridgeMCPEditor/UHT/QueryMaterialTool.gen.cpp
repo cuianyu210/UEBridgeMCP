@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UQueryMaterialTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Consolidated tool for Material inspection.\n * Replaces: get-material-graph, get-material-parameters\n *\n * Usage:\n * - Default: Returns both graph and parameters\n * - include=\"graph\": Only graph structure\n * - include=\"parameters\": Only parameters\n */" },
+#endif
 		{ "IncludePath", "Tools/Material/QueryMaterialTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Material/QueryMaterialTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consolidated tool for Material inspection.\nReplaces: get-material-graph, get-material-parameters\n\nUsage:\n- Default: Returns both graph and parameters\n- include=\"graph\": Only graph structure\n- include=\"parameters\": Only parameters" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UQueryMaterialTool::~UQueryMaterialTool() {}
 // End Class UQueryMaterialTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQueryMaterialTool, UQueryMaterialTool::StaticClass, TEXT("UQueryMaterialTool"), &Z_Registration_Info_UClass_UQueryMaterialTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryMaterialTool), 3288994130U) },
+		{ Z_Construct_UClass_UQueryMaterialTool, UQueryMaterialTool::StaticClass, TEXT("UQueryMaterialTool"), &Z_Registration_Info_UClass_UQueryMaterialTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQueryMaterialTool), 1683095752U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_4081537554(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_4245885440(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Material_QueryMaterialTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UClassHierarchyTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Tool for browsing class inheritance tree\n */" },
+#endif
 		{ "IncludePath", "Tools/Analysis/ClassHierarchyTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Analysis/ClassHierarchyTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Tool for browsing class inheritance tree" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UClassHierarchyTool::~UClassHierarchyTool() {}
 // End Class UClassHierarchyTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UClassHierarchyTool, UClassHierarchyTool::StaticClass, TEXT("UClassHierarchyTool"), &Z_Registration_Info_UClass_UClassHierarchyTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClassHierarchyTool), 850813584U) },
+		{ Z_Construct_UClass_UClassHierarchyTool, UClassHierarchyTool::StaticClass, TEXT("UClassHierarchyTool"), &Z_Registration_Info_UClass_UClassHierarchyTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UClassHierarchyTool), 1179906583U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_4259336774(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_4254485485(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Analysis_ClassHierarchyTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

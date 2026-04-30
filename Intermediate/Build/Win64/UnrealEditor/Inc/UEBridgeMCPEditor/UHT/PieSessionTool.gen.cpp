@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UPieSessionTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Consolidated PIE session control tool.\n * Actions: start, stop, pause, resume, get-state, wait-for\n */" },
+#endif
 		{ "IncludePath", "Tools/PIE/PieSessionTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/PIE/PieSessionTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Consolidated PIE session control tool.\nActions: start, stop, pause, resume, get-state, wait-for" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UPieSessionTool::~UPieSessionTool() {}
 // End Class UPieSessionTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPieSessionTool, UPieSessionTool::StaticClass, TEXT("UPieSessionTool"), &Z_Registration_Info_UClass_UPieSessionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPieSessionTool), 2382879566U) },
+		{ Z_Construct_UClass_UPieSessionTool, UPieSessionTool::StaticClass, TEXT("UPieSessionTool"), &Z_Registration_Info_UClass_UPieSessionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPieSessionTool), 3999606980U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_1969600359(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_1353071475(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_PIE_PieSessionTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

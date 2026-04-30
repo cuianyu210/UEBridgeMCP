@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UCreateAssetTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Create a new asset by class name.\n * Supports any UObject type including Blueprint, Material, DataTable, DataAsset, etc.\n * Uses dynamic class resolution - accepts class names or Blueprint class paths.\n */" },
+#endif
 		{ "IncludePath", "Tools/Write/CreateAssetTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Write/CreateAssetTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create a new asset by class name.\nSupports any UObject type including Blueprint, Material, DataTable, DataAsset, etc.\nUses dynamic class resolution - accepts class names or Blueprint class paths." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UCreateAssetTool::~UCreateAssetTool() {}
 // End Class UCreateAssetTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCreateAssetTool, UCreateAssetTool::StaticClass, TEXT("UCreateAssetTool"), &Z_Registration_Info_UClass_UCreateAssetTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCreateAssetTool), 2075121721U) },
+		{ Z_Construct_UClass_UCreateAssetTool, UCreateAssetTool::StaticClass, TEXT("UCreateAssetTool"), &Z_Registration_Info_UClass_UCreateAssetTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCreateAssetTool), 969958152U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_1343883154(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_134901421(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_CreateAssetTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

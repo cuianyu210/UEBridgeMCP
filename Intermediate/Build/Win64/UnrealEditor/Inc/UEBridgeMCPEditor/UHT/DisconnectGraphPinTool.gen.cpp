@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UDisconnectGraphPinTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Break a pin connection in a Blueprint or Material graph.\n */" },
+#endif
 		{ "IncludePath", "Tools/Write/DisconnectGraphPinTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Write/DisconnectGraphPinTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Break a pin connection in a Blueprint or Material graph." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UDisconnectGraphPinTool::~UDisconnectGraphPinTool() {}
 // End Class UDisconnectGraphPinTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDisconnectGraphPinTool, UDisconnectGraphPinTool::StaticClass, TEXT("UDisconnectGraphPinTool"), &Z_Registration_Info_UClass_UDisconnectGraphPinTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDisconnectGraphPinTool), 1183955004U) },
+		{ Z_Construct_UClass_UDisconnectGraphPinTool, UDisconnectGraphPinTool::StaticClass, TEXT("UDisconnectGraphPinTool"), &Z_Registration_Info_UClass_UDisconnectGraphPinTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDisconnectGraphPinTool), 531179728U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_405271880(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_3502654368(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Write_DisconnectGraphPinTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

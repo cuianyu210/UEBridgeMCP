@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UCompileAssetsTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \xe8\x93\x9d\xe5\x9b\xbe\xe7\xbc\x96\xe8\xaf\x91\xe5\xb7\xa5\xe5\x85\xb7 \xe2\x80\x94 \xe6\x94\xaf\xe6\x8c\x81\xe6\x89\xb9\xe9\x87\x8f\xe7\xbc\x96\xe8\xaf\x91 Blueprint\xe3\x80\x81WidgetBlueprint\xe3\x80\x81""AnimBlueprint\xe3\x80\x82\n * \xe6\x9b\xbf\xe4\xbb\xa3\xe9\x80\x9a\xe8\xbf\x87 run-python-script \xe8\xbf\x9b\xe8\xa1\x8c\xe7\xbc\x96\xe8\xaf\x91\xe7\x9a\x84\xe6\x97\xa7\xe6\x96\xb9\xe5\xbc\x8f\xe3\x80\x82\n */" },
+#endif
 		{ "IncludePath", "Tools/Asset/CompileAssetsTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/Asset/CompileAssetsTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe8\x93\x9d\xe5\x9b\xbe\xe7\xbc\x96\xe8\xaf\x91\xe5\xb7\xa5\xe5\x85\xb7 \xe2\x80\x94 \xe6\x94\xaf\xe6\x8c\x81\xe6\x89\xb9\xe9\x87\x8f\xe7\xbc\x96\xe8\xaf\x91 Blueprint\xe3\x80\x81WidgetBlueprint\xe3\x80\x81""AnimBlueprint\xe3\x80\x82\n\xe6\x9b\xbf\xe4\xbb\xa3\xe9\x80\x9a\xe8\xbf\x87 run-python-script \xe8\xbf\x9b\xe8\xa1\x8c\xe7\xbc\x96\xe8\xaf\x91\xe7\x9a\x84\xe6\x97\xa7\xe6\x96\xb9\xe5\xbc\x8f\xe3\x80\x82" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UCompileAssetsTool::~UCompileAssetsTool() {}
 // End Class UCompileAssetsTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCompileAssetsTool, UCompileAssetsTool::StaticClass, TEXT("UCompileAssetsTool"), &Z_Registration_Info_UClass_UCompileAssetsTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCompileAssetsTool), 21554929U) },
+		{ Z_Construct_UClass_UCompileAssetsTool, UCompileAssetsTool::StaticClass, TEXT("UCompileAssetsTool"), &Z_Registration_Info_UClass_UCompileAssetsTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCompileAssetsTool), 301398763U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_3019342123(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_617765490(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_Asset_CompileAssetsTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

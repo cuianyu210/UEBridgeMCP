@@ -29,10 +29,14 @@ struct Z_Construct_UClass_UCallFunctionTool_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Call functions on actors, components, or global Blueprint libraries.\n * Supports editor and PIE worlds.\n */" },
+#endif
 		{ "IncludePath", "Tools/CallFunctionTool.h" },
 		{ "ModuleRelativePath", "Public/Tools/CallFunctionTool.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Call functions on actors, components, or global Blueprint libraries.\nSupports editor and PIE worlds." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -79,14 +83,14 @@ UCallFunctionTool::~UCallFunctionTool() {}
 // End Class UCallFunctionTool
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCallFunctionTool, UCallFunctionTool::StaticClass, TEXT("UCallFunctionTool"), &Z_Registration_Info_UClass_UCallFunctionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCallFunctionTool), 2742829845U) },
+		{ Z_Construct_UClass_UCallFunctionTool, UCallFunctionTool::StaticClass, TEXT("UCallFunctionTool"), &Z_Registration_Info_UClass_UCallFunctionTool, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCallFunctionTool), 1300177042U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_607536926(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_2635264463(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Tools_CallFunctionTool_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

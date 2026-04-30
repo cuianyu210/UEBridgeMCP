@@ -35,49 +35,85 @@ struct Z_Construct_UScriptStruct_FMcpServerCapabilities_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Server capabilities to declare during initialization\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server capabilities to declare during initialization" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsTools_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports tools */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports tools" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bToolsListChanged_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports tool list change notifications */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports tool list change notifications" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsToolListing_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports tools/list */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports tools/list" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsToolInvocation_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports tools/call */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports tools/call" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegisteredToolCount_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Number of tools currently registered */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of tools currently registered" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsResources_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports resources */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports resources" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsPrompts_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports prompts */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports prompts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsLogging_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Server supports logging */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server supports logging" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bSupportsTools_SetBit(void* Obj);
@@ -190,24 +226,40 @@ struct Z_Construct_UScriptStruct_FMcpClientCapabilities_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Client capabilities received during initialization\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Client capabilities received during initialization" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsRoots_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Client supports roots */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Client supports roots" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRootsListChanged_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Client supports roots list changed notifications */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Client supports roots list changed notifications" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSupportsSampling_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Client supports sampling */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Client supports sampling" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bSupportsRoots_SetBit(void* Obj);
@@ -285,9 +337,13 @@ struct Z_Construct_UScriptStruct_FMcpServerInfo_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Server information for initialize response\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Server information for initialize response" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
@@ -353,9 +409,13 @@ struct Z_Construct_UScriptStruct_FMcpClientInfo_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Client information received during initialization\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Client information received during initialization" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Protocol/McpCapabilities.h" },
@@ -404,18 +464,18 @@ UScriptStruct* Z_Construct_UScriptStruct_FMcpClientInfo()
 // End ScriptStruct FMcpClientInfo
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMcpServerCapabilities::StaticStruct, Z_Construct_UScriptStruct_FMcpServerCapabilities_Statics::NewStructOps, TEXT("McpServerCapabilities"), &Z_Registration_Info_UScriptStruct_McpServerCapabilities, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpServerCapabilities), 1822012261U) },
-		{ FMcpClientCapabilities::StaticStruct, Z_Construct_UScriptStruct_FMcpClientCapabilities_Statics::NewStructOps, TEXT("McpClientCapabilities"), &Z_Registration_Info_UScriptStruct_McpClientCapabilities, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpClientCapabilities), 4010841436U) },
-		{ FMcpServerInfo::StaticStruct, Z_Construct_UScriptStruct_FMcpServerInfo_Statics::NewStructOps, TEXT("McpServerInfo"), &Z_Registration_Info_UScriptStruct_McpServerInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpServerInfo), 2004662026U) },
-		{ FMcpClientInfo::StaticStruct, Z_Construct_UScriptStruct_FMcpClientInfo_Statics::NewStructOps, TEXT("McpClientInfo"), &Z_Registration_Info_UScriptStruct_McpClientInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpClientInfo), 3421785235U) },
+		{ FMcpServerCapabilities::StaticStruct, Z_Construct_UScriptStruct_FMcpServerCapabilities_Statics::NewStructOps, TEXT("McpServerCapabilities"), &Z_Registration_Info_UScriptStruct_McpServerCapabilities, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpServerCapabilities), 331860544U) },
+		{ FMcpClientCapabilities::StaticStruct, Z_Construct_UScriptStruct_FMcpClientCapabilities_Statics::NewStructOps, TEXT("McpClientCapabilities"), &Z_Registration_Info_UScriptStruct_McpClientCapabilities, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpClientCapabilities), 3902985444U) },
+		{ FMcpServerInfo::StaticStruct, Z_Construct_UScriptStruct_FMcpServerInfo_Statics::NewStructOps, TEXT("McpServerInfo"), &Z_Registration_Info_UScriptStruct_McpServerInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpServerInfo), 3981990133U) },
+		{ FMcpClientInfo::StaticStruct, Z_Construct_UScriptStruct_FMcpClientInfo_Statics::NewStructOps, TEXT("McpClientInfo"), &Z_Registration_Info_UScriptStruct_McpClientInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMcpClientInfo), 3725043081U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_2693618116(TEXT("/Script/UEBridgeMCP"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_2226715530(TEXT("/Script/UEBridgeMCP"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCP_Public_Protocol_McpCapabilities_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

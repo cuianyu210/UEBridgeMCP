@@ -32,30 +32,46 @@ struct Z_Construct_UClass_UMcpServerSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Settings for MCP Server\n */" },
+#endif
 		{ "IncludePath", "Subsystem/McpEditorSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Settings for MCP Server" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ServerPort_MetaData[] = {
 		{ "Category", "Server" },
 		{ "ClampMax", "65535" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** HTTP server port for MCP connections */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "HTTP server port for MCP connections" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAutoStartServer_MetaData[] = {
 		{ "Category", "Server" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Auto-start the MCP server when the editor opens */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Auto-start the MCP server when the editor opens" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BindAddress_MetaData[] = {
 		{ "Category", "Server" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Bind address for HTTP server (127.0.0.1 for localhost only) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Bind address for HTTP server (127.0.0.1 for localhost only)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ServerPort;
@@ -129,9 +145,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_GetActualPort_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Get the port the server is bound to (0 if not running) */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the port the server is bound to (0 if not running)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
@@ -173,9 +193,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_GetServerStatus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Get server status information */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get server status information" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
@@ -217,9 +241,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_GetSettings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Get settings */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get settings" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
@@ -261,9 +289,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_IsServerRunning_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Check if server is running */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if server is running" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -306,9 +338,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_RestartServer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Restart the server */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Restart the server" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -342,9 +378,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_StartServer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Start the MCP server */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start the MCP server" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_ReturnValue_SetBit(void* Obj);
@@ -387,9 +427,13 @@ struct Z_Construct_UFunction_UMcpEditorSubsystem_StopServer_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MCP" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Stop the MCP server */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop the MCP server" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -437,28 +481,36 @@ struct Z_Construct_UClass_UMcpEditorSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Editor subsystem managing MCP server lifecycle\n */" },
+#endif
 		{ "IncludePath", "Subsystem/McpEditorSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Editor subsystem managing MCP server lifecycle" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Settings_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Settings */" },
+#endif
 		{ "ModuleRelativePath", "Public/Subsystem/McpEditorSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Settings" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Settings;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetActualPort, "GetActualPort" }, // 1731699182
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetServerStatus, "GetServerStatus" }, // 2224432794
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetSettings, "GetSettings" }, // 1390261183
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_IsServerRunning, "IsServerRunning" }, // 944229910
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_RestartServer, "RestartServer" }, // 2140431775
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_StartServer, "StartServer" }, // 2175419700
-		{ &Z_Construct_UFunction_UMcpEditorSubsystem_StopServer, "StopServer" }, // 4181136702
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetActualPort, "GetActualPort" }, // 1615253563
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetServerStatus, "GetServerStatus" }, // 1829670884
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_GetSettings, "GetSettings" }, // 98406857
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_IsServerRunning, "IsServerRunning" }, // 412257499
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_RestartServer, "RestartServer" }, // 4252960710
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_StartServer, "StartServer" }, // 1808387343
+		{ &Z_Construct_UFunction_UMcpEditorSubsystem_StopServer, "StopServer" }, // 3933340465
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -509,15 +561,15 @@ UMcpEditorSubsystem::~UMcpEditorSubsystem() {}
 // End Class UMcpEditorSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMcpServerSettings, UMcpServerSettings::StaticClass, TEXT("UMcpServerSettings"), &Z_Registration_Info_UClass_UMcpServerSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpServerSettings), 1099958876U) },
-		{ Z_Construct_UClass_UMcpEditorSubsystem, UMcpEditorSubsystem::StaticClass, TEXT("UMcpEditorSubsystem"), &Z_Registration_Info_UClass_UMcpEditorSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpEditorSubsystem), 3540471824U) },
+		{ Z_Construct_UClass_UMcpServerSettings, UMcpServerSettings::StaticClass, TEXT("UMcpServerSettings"), &Z_Registration_Info_UClass_UMcpServerSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpServerSettings), 763672869U) },
+		{ Z_Construct_UClass_UMcpEditorSubsystem, UMcpEditorSubsystem::StaticClass, TEXT("UMcpEditorSubsystem"), &Z_Registration_Info_UClass_UMcpEditorSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMcpEditorSubsystem), 1335203740U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_3937349390(TEXT("/Script/UEBridgeMCPEditor"),
-	Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Engine_Plugins_Editor_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_880338665(TEXT("/Script/UEBridgeMCPEditor"),
+	Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_NetWorkLearn_Plugins_UEBridgeMCP_Source_UEBridgeMCPEditor_Public_Subsystem_McpEditorSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
